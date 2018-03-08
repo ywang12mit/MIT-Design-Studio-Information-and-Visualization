@@ -4,6 +4,7 @@
 
 }
 
+
 .three{
 	width:30%;
 
@@ -122,6 +123,45 @@ top: 500px;
 #i1{
 	background:#777777;
 }
+
+/*#item1{
+	color: #EEEEEE !important;
+}
+
+#item2{
+	color: #EEEEEE !important;
+}
+
+#item3{
+	color: #EEEEEE !important;
+}*/
+
+
+#item1{
+	color: #FFFFFF !important;
+}
+
+#item2{
+	color: #EEEEEE !important;
+}
+
+#item3{
+	color: #EEEEEE !important;
+}
+
+#item4{
+	color: #696969 !important;
+}
+
+#item5{
+	color: #545454 !important;
+}
+
+#item6{
+	color: #2a2a2a !important;
+}
+
+
 .footer {
 	position: absolute;
 	width:100%;
