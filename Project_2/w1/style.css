@@ -1,0 +1,194 @@
+*{
+	text-shadow: none !important;
+	font: 16px Avenir, Avenir !important ;
+
+}
+
+.three{
+	width:30%;
+
+
+}
+.ui-page { 
+    background:#FFFFFF;
+    background-image: url("hm.jpg");
+    background-size: 100%;
+    
+
+
+}
+#cicon{
+	padding-top: 0px !important;
+	margin-top: 0px;
+	width:100%;
+	top: 0px;
+	align-self: center !important;
+	position: relative !important;
+	/*margin-bottom: 50px;*/
+
+}
+
+.today{
+position: absolute;
+top: 500px;
+
+}
+
+.ui-btn-active{
+	background:#BBBBBB !important ;
+}
+
+#alert{
+	text-align:center;
+	align-self: center ;
+}
+#ctemp {
+  font-size: 85px !important;
+  z-index: 1;
+  position: absolute;
+  top: 160px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  
+  /*bottom: 5px;
+  background: red;
+  max-width:100px;*/
+  text-align:center
+
+}
+
+#clh {
+  font-size: 25px !important;
+  z-index: 1;
+  position: absolute;
+  top: 255px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  
+  /*bottom: 5px;
+  background: red;
+  max-width:100px;*/
+  text-align:center
+
+}
+
+.ui-corner-all{
+	margin:3px;
+	padding:0px !important;
+	border:0px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/
+}
+/*.ui-block-b{
+	align-self: center !important;
+	/*margin-left: 3px !important;*/
+
+/*ui-shadow{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}*/
+/*.ui-grid-b{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	background:#00A878;
+}*/
+
+#i6{
+	background:#EEEEEE;
+}
+#i5{
+	background:#DDDDDD;
+}
+#i4{
+	background:#BBBBBB;
+}
+#i3{
+	background:#A1A1A1;
+}
+#i2{
+	background:#888888;
+}
+#i1{
+	background:#777777;
+}
+.footer {
+	position: absolute;
+	width:100%;
+	bottom: -1200px;
+}
+
+.home ul li a {
+	background: #00A878 !important
+	height: 200px;
+}
+
+.home ul li a.signup {
+	background: #D8F1A0 !important;
+	height: 200px;
+}
+
+#logo {
+	position: relative;
+	top: 500px;
+}
+
+.icon{
+	width:50%;
+	position: center;
+}
+
+#datepicker {
+	position: absolute;
+	
+	/*margin-top: 100px;*/
+	margin-left: 30px;
+
+}
+
+#prog {
+	width: 100px;
+	margin-top: -10px;
+}
+
+p {
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#checkboxes {
+	margin-top: 275px;
+}
+
+#skip {
+	position: absolute;
+	color: #FE5E41;
+	bottom: 30px;
+	padding-left: 150px;
+}
+
+#connect {
+	width: 100px;
+	padding-left: 220px;
+	padding-top: 50px;
+}
+
+.grid div {
+	width: 60px;
+	font-size: 5px;
+}
+
+.grid.active {
+background: #D8F1A0;
+color: #fff;
+}
