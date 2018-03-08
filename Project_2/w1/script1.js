@@ -1,6 +1,6 @@
 //plots
 
-var scaleImg=d3.scaleOrdinal().domain(["snow","rain","partly-cloudy-day"]).range(["snow.png","drop1.png","ray.png","blkcloud1.png"]);
+var scaleImg=d3.scaleOrdinal().domain(["rain","snow","partly-cloudy-day","cloudy"]).range(["drop1.png","snow.png","ray.png","blkcloud1.png"]);
 var color="#F24435";
 //document.querySelector('feed').style.color = color;
 ///////d3 format time / formatTime("%A")
@@ -38,23 +38,27 @@ function draw(data){
 
 
 
+
 	
 	
 	}
-	
-	
-//console.log(scaleImg(data.daily.data[0].icon));
-	d3.select("#alert").html(data.alerts[0].title);
+	// d3.select("#alert").html(data.alerts[0].title);
+	d3.select("#alert").html(data.hourly.summary);
 	d3.select("#ctemp").html(data.currently.temperature +"\xB0");
 	document.getElementById("cicon").src=scaleImg(data.currently.icon);
 	d3.select("#clh").html(data.daily.data[0].temperatureLow + "\xB0 - " + data.daily.data[0].temperatureHigh +"\xB0");
 	d3.select("#per").html(data.currently.apparentTemperature+"\xB0");
-	d3.select("#pro").html(data.currently.precipProbability*100+"%");
+	d3.select("#pro").html(Math.round(data.currently.precipProbability*100* 10 ) / 10+"%");
 	d3.select("#win").html(Math.round(data.currently.windSpeed * 10 ) / 10+"mph");
+	
+	
+console.log(scaleImg(data.daily.data[0].icon));
+	
 	//d3.append()
 
 	//d3.select("#ctemp").html(data.currently.icon);
 	//document.getElementById("#ctemp").html(data.currently.icon);
+
 }
 
 
