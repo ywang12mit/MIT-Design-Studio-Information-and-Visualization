@@ -14,7 +14,7 @@ var canvas = d3.select("svg"),
 var blue = canvas.append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")") //circle position
     .attr("fill", "none")
-    .attr("stroke-width", data.currently.dewPoint/3)
+    .attr("stroke-width", data.currently.dewPoint/7)
     .attr("stroke-linejoin", "round") // rounded lines, not sharp
   
 
@@ -72,7 +72,7 @@ var red = canvas.append("g")
 var yellow = canvas.append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")") //circle position
     .attr("fill", "none")
-    .attr("stroke-width", data.currently.uvIndex+15)
+    .attr("stroke-width", data.currently.uvIndex+11)
     .attr("stroke-linejoin", "round") // rounded lines, not sharp
   
 
