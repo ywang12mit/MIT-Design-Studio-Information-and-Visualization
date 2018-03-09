@@ -1,7 +1,12 @@
 body {
     padding: 50px;
+
 }
 
+*{background-color: #F5F3EE;
+font-family: 'Open Sans';
+line-height: 26.4px;
+}
 
 #mobile1,#mobile2 {
     width: 414px;
@@ -23,4 +28,55 @@ height: 736px;
 width: 414px;
 height: 736px;
 
+}
+
+h1 {
+	font-family: "Open Sans";
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	margin-top:100px;
+	margin-bottom:30px;
+}
+#sk1{padding-left: 40px !important;}
+#sk2{padding-right: 15px !important;}
+h3 {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+p，a {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: "Open Sans";
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: "Open Sans";
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+
+p, h1, h2, h3, h3, h5, h6,a {
+    padding-left: 40px !important;
+    padding-right: 15px;
+    text-align:left;
 }
