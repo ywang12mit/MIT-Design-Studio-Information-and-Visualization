@@ -1,23 +1,11 @@
- // $.ajax({
- //            url: 'https://api.darksky.net/forecast/bb63e4043af6c2c825eab7f0fac896e0/42.361145,-71.057083',
- //        dataType: 'JSONP',
- //        type: 'GET',
- //        crossDomain: true,
- //        complete: function (data) {
- //        if (data.readyState == '4' && data.status == '200') {
- //        draw(data.responseJSON)
- //        completeonsole.log(data.responseJSON)
- //        } else {
- //        console.log("DATA FETCH FAILED")
- //        }
- //        }
- //        });
-    
+<!DOCTYPE html>
+ <link rel="stylesheet" href="style.css" />
 
-d3.json("../data/boston_weather.json",draw);
-
-
-function draw(data){
+<svg width="1200" height="1200" class="center"></svg> <!-- canvas size -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+d3.request('https://api.darksky.net/forecast/bb63e4043af6c2c825eab7f0fac896e0/42.361145,-71.057083', function(error, response) {
+    // Now use response to do some d3 magic
 
 var canvas = d3.select("svg"),
     width = +canvas.attr("width"),
@@ -45,10 +33,10 @@ var group = canvas.append("g")
           .angle(function(a) { return a; })
           .radius(function(a) {
             var t = d3.now() / 1000;
-            return (data.currently.time)/10000000 //200
-                    + Math.cos(a * 8 - i * 2 * Math.PI / 3 + t) 
-                    * Math.pow((1 + Math.cos(a - t)) / 2, 3) 
-                    * 32;
+            return (response.currently.time/1000000)//200 
+                  + Math.cos(a * 8 - i * 2 * Math.PI / 3 + t) 
+                  * Math.pow((1 + Math.cos(a - t)) / 2, 3) 
+                  * 32;
           });//a-->the bigger the denser
             //i&t --> the delay between lines 1-60
     });
@@ -58,7 +46,9 @@ d3.timer(function() {
     return d(angles);
   });
 });
-}
 
 
 
+
+});
+</script>
