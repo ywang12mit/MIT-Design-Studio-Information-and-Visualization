@@ -4,21 +4,14 @@
     <title>Weather 1</title>
 
 
-    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-    <!-- <link href="jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" /> 
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <!-- <link rel="stylesheet" href="themes/VolunTimeTheme.min.css" /> -->
-
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/weather-icons-wind.css" >
-    <link rel="stylesheet" type="text/css" href="css/weather-icons.css"> -->
+   
     
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    
-
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
-    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+  
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script>
@@ -53,11 +46,23 @@
         <p id="ctemp"></p>
         <p id="clh"></p>
         <img src="" id="cicon"> 
-         
-   
-        <div class="ui-grid-b today" >      
+
+        <div class="ui-grid-b" >      
                     <div class="ui-block-a">
+                        <p>feels like</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <p>chance of rain</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <p>wind speed</p>
+                    </div>
+        </div>
+        <div class="ui-grid-b" >      
+                    <div class="ui-block-a">
+
                         <img src="person.png" class="three center">
+
                         <p id="per" class="three center"></p>
                     </div>
                     <div class="ui-block-b">
@@ -97,7 +102,7 @@
         </div><!-- /header -->
             
         <div data-role="content">
-            <!-- <i class="wi wi-night-sleet"></i>    -->
+            
             <div id="item1" class="ui-corner-all ui-shadow" style="padding: 1em;">
             <div class="ui-grid-b" id="i1">      
                     <div class="ui-block-a">
@@ -108,7 +113,7 @@
                     
                     <div class="ui-block-b" class="center">                       
                         <img src="" id="icon1" class="icon center"> 
-                        <!-- <img src="rain.jpg" >  -->                    
+                                   
                     </div>
 
                     
@@ -212,13 +217,31 @@
             </div>           
             
             <br>
+
+            <div id="item7" class="ui-corner-all ui-shadow" style="padding: 1em;">
+            <div class="ui-grid-b" id="i7">    
+                    <div class="ui-block-a">
+                        <p id="day7"></p>
+                    </div>
+                    
+                    <div class="ui-block-b">                       
+                        <img src="" id="icon7" class="icon center">                        
+                    </div>
+
+                    <div class="ui-block-c">
+                        <p id="lhtemp7"></p>                        
+                    </div>
+            </div>                      
+            </div>           
+            
+            <br>
         </div>
 
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
                     <li> <a href="#discover">Today</a></li>
-                    <li> <a href="#feed" class="ui-btn-active">Next 7 Days</a></li>
+                    <li> <a href="#feed" class="ui-btn-active">7 Days</a></li>
                     
                 </ul>
             </div>

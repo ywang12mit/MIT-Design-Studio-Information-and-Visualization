@@ -5,11 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather App - Project 2</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet"/>
+   
+    <link href="style0.css" rel="stylesheet"/>
     <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-    <!-- <link href="jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet"> -->
+    
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
     
 </head>
@@ -17,25 +18,27 @@
 <body>
    
 <div class="container">
-    <h1 class="col-md-12">Initial Sketches</h1>
-    <img id="sk1" width=49% style= "border: #000000 6px" src="sk1.jpg">
-    <img id="sk2" width=49% style= "border: #000000 6px" src="sk2.jpg">
+    <h1>Initial Sketches</h1>
+    <img width=49%  src="sk1.jpg">
+    <img width=49%  src="sk2.jpg">
     
 
-    <h1 class="col-md-12">Initial Illustration</h1>
+    <h1>Initial Illustration</h1>
     
-    <img id="sk1" height= 700 style= "border: #000000 6px" src="weather1.png">
-    <img id="sk2" height= 700 style= "border: #000000 6px" src="weather2.png">
+    <img class="mobile1" align="middle" src="weather1.png">
+    <img class="mobile1" align="middle" src="weather2.png">
 
 
     
     <div class="row">
         <h1 class="col-md-12">First Weather App</h1>
-        <a href="w1/w1.html">Click this link to check out Chloe's first weather app (but the jQueryMobile format doesn't work)!</a>
-        <p>The interactive version only works locally. Please download the w1 folder and open w1.html to view the app. Thank you! These are two creenshots.</p>
-        <img id="mobile1" src="w1/11.png"><img id="mobile1" src="w1/12.png">
+        <p>This is an interactive app. Please explore both pages.</p>
+        <iframe  class="mobile center" src="w1/w1.html" ></iframe>
+        
+        <p>The following are two screenshots to illustrate another example.</p>
+        <img class="mobile1" src="w1/11.png"><img class="mobile1" src="w1/12.png">
          
-         <!-- <iframe  id="mobile1" src="w1/w1.html" ></iframe> -->
+       
        
     </div>
     
@@ -44,41 +47,19 @@
     <div class="row">
     <h1 class="col-md-12">Second Weather App</h1>
     <p>
-        This circle wave describes the current weather.</br>
+        This circle wave describes the current weather</br>
         Dimension: amplitude and stroke size</br>
-        Cyan - amplitude: humanity ; stroke size: chance of rain </br>
-        Megenta - amplitude: wind speed ; stroke size: wind gust</br>
-        Yellow - amplitude: temperature ; stroke size: amount of sun (uv index)</br>
-        Scaling: percentage from average Boston weather (average weather data --> cos wave coefficient = 1)</br>
         
-
-
-
-    </p>
-    <iframe  id="mobile2" src="test/new.html" ></iframe>
-    </br>
+   <iframe  class="mobile2 center" src="w2/w2.html" align="middle" ></iframe>
     <p>The below screenshot illustrates another instance of this circle wave.</p>
-    <img id="mobile1" src="one.jpg">   
+    
+    <img class="mobile" src="w2/now.jpg">   
+    
     </div>
-
-
 
 </div>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="script.js"></script>
 </body>
-<!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/skel.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-            <script src="assets/js/main.js"></script>
-             <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="script1.js"></script>
 </html>

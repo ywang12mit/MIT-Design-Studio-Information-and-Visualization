@@ -1,6 +1,6 @@
 //plots
 
-var scaleImg=d3.scaleOrdinal().domain(["rain","snow","partly-cloudy-day","cloudy"]).range(["drop1.png","snow.png","ray.png","blkcloud1.png"]);
+var scaleImg=d3.scaleOrdinal().domain(["snow","partly-cloudy-day","partly-cloudy-night","cloudy","rain"]).range(["snow.png","sun.png","moon.png","cloud.png","rain.png"]);
 var color="#F24435";
 //document.querySelector('feed').style.color = color;
 ///////d3 format time / formatTime("%A")
@@ -26,14 +26,11 @@ $.ajax({
 function draw(data){
 	var formatTime = d3.timeFormat("%a %b %d");
 	
-	for (var i=1; i<7; i++){
+	for (var i=1; i<8; i++){
 
 	
 	d3.select("#day"+i).html(formatTime(data.daily.data[i-1].time*1000));
 	d3.select("#lhtemp"+i).html(Math.round(data.daily.data[i-1].temperatureLow* 10 ) / 10 + "\xB0 - " + Math.round(data.daily.data[i-1].temperatureHigh* 10 ) / 10+"\xB0");
-	//d3.select("#icon"+i).html(scaleImg(data.daily.data[i-1].icon));
-	
-	
 	document.getElementById("icon"+i).src=scaleImg(data.daily.data[i-1].icon);
 
 
@@ -42,7 +39,7 @@ function draw(data){
 	
 	
 	}
-	// d3.select("#alert").html(data.alerts[0].title);
+	
 	d3.select("#alert").html(data.hourly.summary);
 	d3.select("#ctemp").html(data.currently.temperature +"\xB0");
 	document.getElementById("cicon").src=scaleImg(data.currently.icon);
@@ -54,11 +51,6 @@ function draw(data){
 	
 console.log(scaleImg(data.daily.data[0].icon));
 	
-	//d3.append()
-
-	//d3.select("#ctemp").html(data.currently.icon);
-	//document.getElementById("#ctemp").html(data.currently.icon);
-
 }
 
 

@@ -1,6 +1,7 @@
 *{
 	text-shadow: none !important;
-	font: 16px Avenir, Avenir !important ;
+	/*font: 16px Avenir, Avenir !important ;*/
+	font-family: 'Avenir',Avenir sans-serif;
 
 }
 
@@ -45,6 +46,7 @@ top: 550px;
 }
 #ctemp {
   font-size: 85px !important;
+  
   z-index: 1;
   position: absolute;
   top: 200px;
@@ -104,6 +106,9 @@ top: 550px;
 	width:100%;
 	background:#00A878;
 }*/
+#i7{
+	background:#f4f4f4;
+}
 
 #i6{
 	background:#EEEEEE;
@@ -159,6 +164,9 @@ top: 550px;
 
 #item6{
 	color: #2a2a2a !important;
+}
+#item7{
+	color: #000000 !important;
 }
 
 
