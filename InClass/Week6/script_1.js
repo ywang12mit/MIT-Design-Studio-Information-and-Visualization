@@ -19,7 +19,7 @@ var queue = d3.queue()
     .await(dataloaded);
 
 function dataloaded (err,data,map){
-
+console.log(data);
     // get max and min values of data
 
     // scale Color for the map
@@ -35,5 +35,8 @@ function dataloaded (err,data,map){
 
 
 function parseData(d){
-
+var id = (d.ID).split("US");
+return(
+	id: d.Id
+	)
 }
