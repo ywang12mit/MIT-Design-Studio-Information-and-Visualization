@@ -13,6 +13,9 @@ var canvas1RealHeight = document.getElementById("plot2").clientHeight;
 
 var c = canvas.getContext("2d");
 
+
+
+
 /////////////////////////////////////////////////////////////////////////
 function Line1(x,y,dx,dy){
   this.x = x;
@@ -20,7 +23,10 @@ function Line1(x,y,dx,dy){
   this.dx = dx;
   this.dy = dy;
 
-  this.draw = function() {   
+  this.draw = function() {  
+     c.fillStyle  = "#f4eee1";
+c.fillRect(0, 0, canvas.width, canvas.height); 
+
     c.lineWidth=10;
     c.beginPath();
     c.moveTo(0,y);
@@ -31,7 +37,7 @@ function Line1(x,y,dx,dy){
     c.beginPath();
     c.moveTo(this.x,y);
     c.lineTo(canvas.width,y);
-    c.strokeStyle = "#fee9f0";
+    c.strokeStyle = "#fca8c6";
     c.stroke();
 
     c.fillStyle = "#f92672";
@@ -87,7 +93,7 @@ function Line2(x,y,dx,dy){
     c.beginPath();
     c.moveTo(this.x,y);
     c.lineTo(canvas.width,y);
-    c.strokeStyle = "#f6fcea";
+    c.strokeStyle = "#dbf3ab";
     c.stroke();
 
 
@@ -148,7 +154,7 @@ function Line3(x,y,dx,dy){
     c.beginPath();
     c.moveTo(this.x,y);
     c.lineTo(canvas.width,y);
-    c.strokeStyle = "#effbfd";
+    c.strokeStyle = "#c1eff8";
     c.stroke();
 
 

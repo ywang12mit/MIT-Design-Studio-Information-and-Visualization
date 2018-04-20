@@ -1,7 +1,7 @@
 body {
     padding: 50px;
     font-family: "HelveticaNeueLT Std","Helvetica LT Std Light", "Helvetica", "Arial", "sans-serif";
-}
+    ;}/*background-color: #222222*/
 
 #plot1, #plot2, #plot3 {
     width: 414px;

@@ -13,6 +13,7 @@ var canvas1RealHeight = document.getElementById("plot1").clientHeight;
 
 var c = canvas.getContext("2d");
 
+
 //rec
 // c.fillStyle = 'rgba(255,0,0,0.5)';
 // c.fillRect(50,50,50,50);
@@ -47,17 +48,19 @@ function Circle(x,y,dx,dy,radius){
   this.radius = radius;
 
   this.draw = function() {
+    c.fillStyle  = "#EEEEEE";
+    c.fillRect(0, 0, canvas.width, canvas.height); 
     c.beginPath();
     c.arc(this.x,this.y,this.radius,0,Math.PI*2,false);
-    c.fillStyle = "#fab297";
+    c.fillStyle = "#5680db";
     c.fill();
 
-    c.fillStyle = "#f84f48";
+    c.fillStyle = "#eab041";
     c.font = "50px Calibri";
     c.fillText(hour,this.x-radius+20,this.y+radius/2);
     
-    c.strokeStyle = "white";
-    c.stroke();
+    // c.strokeStyle = "white";
+    // c.stroke();
     
   }
 
@@ -82,12 +85,13 @@ for (var i = 0; i < hour; i++) {
   var radius = 50;
   var x = Math.random()*(canvas.width - radius * 2)+radius;
   var y = Math.random()*(canvas.height - radius * 2)+radius;
-  var dx = (Math.random() - 0.8);
-  var dy = (Math.random() - 0.8);
+  var dx = (Math.random() - 0.5);
+  var dy = (Math.random() - 0.5);
   
   circleArray.push(new Circle(x,y,dx,dy,radius));
   //var circle = new Circle(100,100,3,3,30);
 }
+
 
 
 //SECOND CIRCLE GROUP///////////////////////////////////////////
@@ -99,17 +103,19 @@ function Circle2(x,y,dx,dy,radius){
   this.radius = radius;
 
   this.draw = function() {
+
     c.beginPath();
     c.arc(this.x,this.y,this.radius,0,Math.PI*2,false);
-    c.fillStyle = "#afd7b4";
+    c.fillStyle = "#d85454";
     c.fill();
+    c.lineWidth=0;
 
     c.fillStyle = "#006332";
     c.font = "40px Calibri";
     c.fillText(minutes,this.x-radius+15,this.y+radius/2);
     
-    c.strokeStyle = "white";
-    c.stroke();
+    // c.strokeStyle = "white";
+    // c.stroke();
   }
 
   this.update = function() {
@@ -141,6 +147,7 @@ for (var i = 0; i < minutes; i++) {
   //var circle = new Circle(100,100,3,3,30);
 }
 
+
 //3333/////////////////////////////////////////////////////////////////////////////
 function Circle3(x,y,dx,dy,radius){
   this.x = x;
@@ -152,15 +159,15 @@ function Circle3(x,y,dx,dy,radius){
   this.draw = function() {
     c.beginPath();
     c.arc(this.x,this.y,this.radius,0,Math.PI*2,false);
-    c.fillStyle = "#c0d6e4";
+    c.fillStyle = "#eab041";
     c.fill();
 
     c.fillStyle = "purple";
     c.font = "25px Calibri";
     c.fillText(seconds,this.x-radius+10,this.y+radius/2);
     
-    c.strokeStyle = "white";
-    c.stroke();
+    // c.strokeStyle = "white";
+    // c.stroke();
   }
 
   this.update = function() {
@@ -200,6 +207,7 @@ for (var i = 0; i < seconds; i++) {
 // var dx = (Math.random() - 0.5);
 // var dy = (Math.random() - 0.5);
 // var radius = 30;
+console.log(circleArray);
 console.log(circleArray2);
 console.log(circleArray3);
 //console.log(textArray);
